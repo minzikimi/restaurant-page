@@ -1,0 +1,74 @@
+header{
+  border-bottom: 1px solid var( --clr-vermilion-scarlet);
+}
+
+.introduce {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%; /* Limits the width of the introduce section */
+  margin: 0 auto; /* Centers the introduce section horizontally */
+  padding: 2rem; /* Adds some padding around the content */
+  color: var(--clr-black-violet);
+}
+
+.introduce-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Makes both divs take up equal space */
+}
+
+.me {
+  width: 15em; /* Slightly smaller image */
+  max-width: 100%; /* Ensures image doesn't overflow on small screens */
+  height: auto; /* Maintains aspect ratio */
+}
+
+#span1{
+  color:var(--clr-black-violet);
+}
+
+#span2{
+  font-size:3rem;
+}
+
+.introduce p {
+  font-size: 1rem; /* Adjust as needed */
+  line-height: 1.6; /* Improves readability */
+
+}
+
+.gallery{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+.gallery-item img{
+  width: auto;
+  height: 20em;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .introduce {
+    flex-direction: column; /* Stacks image and text vertically on small screens */
+    text-align: center; /* Centers text on small screens */
+  }
+
+  .me {
+    width: 12em; /* Even smaller image on mobile */
+    margin-bottom: 1rem; /* Adds space between image and text when stacked */
+  }
+
+  .gallery{
+    flex-direction: column;
+  }
+ 
+}
