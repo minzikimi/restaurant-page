@@ -5,7 +5,7 @@ This is my attempt to make my own "simple" restaurant page built with vanila js(
 # 🚀 What I Learned:
 
 - Manipulating the DOM inside of an ES6 JavaScript Module
-- Implementing responsive desgine 
+- Implementing responsive design
 - Bundling with webpack
 
 # 🛠️ Areas for Improvement:
